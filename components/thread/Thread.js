@@ -17,7 +17,7 @@ const Thread = ({ data }) => {
           <div className="flex flex-col space-y-3">
             <div className="flex justify-between items-center">
               <div className="flex space-x-4 items-center">
-                <Image src={data.user.image.png} width="32" height="32" />
+                <Image src={data.user.image.png} width="32" height="32" alt={data.user.username}/>
                 <span className="font-medium">{data.user.username}</span>
                 <span className="text-neutral-grayish-blue">
                   {data.createdAt}

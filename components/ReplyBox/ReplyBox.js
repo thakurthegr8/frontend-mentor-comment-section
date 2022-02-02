@@ -4,6 +4,7 @@ import { currentUser } from "../../public/data.json";
 const Button = ({ typeDesktop }) => {
   return (
     <button
+    aria-label="Send"
       className={`${
         typeDesktop ? "hidden sm:flex" : "flex sm:hidden"
       } justify-center items-center space-x-2 font-medium bg-primary-moderate-blue px-2 py-1 rounded text-neutral-white`}
@@ -20,6 +21,7 @@ const Avatar = ({ typeDesktop }) => {
         width="32"
         height="32"
         objectFit="contain"
+        alt={currentUser.username}
       />
     </div>
   );
